@@ -1,0 +1,12 @@
+LangChain is an open-source framework for building LLM applications.
+It helps organize prompts, models, retrievers, memory, and output parsers.
+Instead of writing one long script, developers compose reusable components.
+LangChain supports many model providers, including local and cloud options.
+A common pattern is to separate ingestion, retrieval, and answering logic.
+This structure makes projects easier to test and maintain.
+Developers can swap models without rewriting the whole application.
+LangChain also provides standardized interfaces for tools and agents.
+For classroom projects, it is useful because concepts are modular and visible.
+Students can learn each building block step by step.
+In production, teams use LangChain to speed up development and iteration.
+Clear project structure is often as important as model quality.

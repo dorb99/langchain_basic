@@ -4,10 +4,6 @@ from langchain_openai import ChatOpenAI
 from .config import HANDLER_TEMPERATURE, OLLAMA_MODEL, ROUTER_TEMPERATURE, OPENAI_MODEL
 
 
-# def _build_client(*, temperature: float) -> ChatOllama:
-#     return ChatOllama(model=OLLAMA_MODEL, temperature=temperature)
-
-
 def _build_client(*, temperature: float) -> ChatOpenAI:
     # return ChatOpenAI(model=OPENAI_MODEL, temperature=temperature)
     return ChatOllama(model=OLLAMA_MODEL, temperature=temperature)

@@ -22,6 +22,8 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 .mypy_cache/
+dist/
+build/
 
 # IDE/system files
 .DS_Store
@@ -29,6 +31,11 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Temporarily ignore unfinished projects
-03_assistant_v1_rag/
+# ChromaDB persisted local data (generated at runtime)
+**/chroma_db/
+**/chroma.sqlite3
+**/*.sqlite3
+**/*.sqlite3-shm
+**/*.sqlite3-wal
+
 04_assistant_v2_tools/

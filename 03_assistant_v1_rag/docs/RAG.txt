@@ -1,0 +1,10 @@
+RAG stands for Retrieval-Augmented Generation.
+RAG combines information retrieval with language generation.
+Before answering, the system searches a knowledge base for relevant text.
+The retrieved context is injected into the prompt for the language model.
+This approach improves factual grounding and reduces hallucinations.
+Typical RAG pipelines include loading, splitting, embedding, and retrieval.
+Vector databases store embeddings for efficient semantic search.
+At query time, the retriever returns top-k relevant chunks.
+The model answers using those chunks instead of relying only on memory.
+RAG is useful when answers must come from private or domain-specific data.
