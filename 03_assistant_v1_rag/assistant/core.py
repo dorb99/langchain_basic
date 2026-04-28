@@ -1,7 +1,7 @@
 from typing import Literal
 
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 
@@ -30,7 +30,7 @@ def build_custom_rag_chain():
     return (
         {
             "context": retriever | RunnableLambda(_format_docs),
-            "question": RunnablePassthrough(),
+            "input": RunnablePassthrough(),
         }
         | PROMPT
         | llm

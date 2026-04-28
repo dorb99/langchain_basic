@@ -14,13 +14,13 @@ class Settings:
     chunk_overlap: int = 20
     retriever_top_k: int = 3
 
-    embedding_provider: str = "ollama"
-    embedding_model: str = "nomic-embed-text"
-    chroma_collection: str = "assistant_v1_nomic"
+    # embedding_provider: str = "ollama"
+    # embedding_model: str = "nomic-embed-text"
+    # chroma_collection: str = "assistant_v1_nomic"
 
-    # embedding_provider: str = "openai"
-    # embedding_model: str = "text-embedding-3-small"
-    # chroma_collection: str = "assistant_v1_openai"
+    embedding_provider: str = "openai"
+    embedding_model: str = "text-embedding-3-small"
+    chroma_collection: str = "assistant_v1_openai"
 
 
 SETTINGS = Settings()
