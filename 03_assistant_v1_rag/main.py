@@ -11,8 +11,15 @@ app = typer.Typer(help="Assistant v1 RAG")
 console = Console()
 
 @app.command()
-def ask(question: str = typer.Argument(..., help="Question to ask")) -> None:
-    result = answer(question)
+def ask(
+    question: str = typer.Argument(..., help="Question to ask"),
+    mode: str = typer.Option(
+        "constructor",
+        "--mode",
+        help="Chain build style: constructor (LangChain helpers) or custom (your own runnable chain).",
+    ),
+) -> None:
+    result = answer(question, mode=mode.lower())
     console.print(Panel(result, title="Assistant v1", border_style="green"))
 
 
