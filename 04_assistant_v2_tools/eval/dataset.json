@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is 15% of 4200?",
+        "reference": "630",
+        "expected_route": "tool_use"
+    },
+    {
+        "question": "What is RAG according to the docs?",
+        "reference": "RAG combines retrieval with generation so answers are grounded in external documents.",
+        "expected_route": "retrieval"
+    },
+    {
+        "question": "Explain what a vector database is",
+        "reference": "A vector database stores embeddings and enables similarity search for retrieval tasks.",
+        "expected_route": "direct_answer"
+    },
+    {
+        "question": "What does LangSmith do?",
+        "reference": "LangSmith provides tracing, debugging, and evaluation visibility for LLM apps.",
+        "expected_route": "tool_use"
+    }
+]

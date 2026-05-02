@@ -1,0 +1,5 @@
+{
+  "rag": "RAG combines retrieval with generation so answers are grounded in external documents.",
+  "langsmith": "LangSmith provides tracing, debugging, and evaluation visibility for LLM apps.",
+  "chroma": "Chroma is a local-friendly vector database often used for rapid RAG development."
+}
