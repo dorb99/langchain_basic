@@ -24,18 +24,18 @@ def build_constructor_rag_chain():
     return create_retrieval_chain(retriever, combine_docs_chain)
 
 
-def build_custom_rag_chain():
-    retriever = get_retriever()
-    llm = get_llm()
-    return (
-        {
-            "context": retriever | RunnableLambda(_format_docs),
-            "input": RunnablePassthrough(),
-        }
-        | PROMPT
-        | llm
-        | StrOutputParser()
-    )
+# def build_custom_rag_chain():
+#     retriever = get_retriever()
+#     llm = get_llm()
+#     return (
+#         {
+#             "context": retriever | RunnableLambda(_format_docs),
+#             "input": RunnablePassthrough(),
+#         }
+#         | PROMPT
+#         | llm
+#         | StrOutputParser()
+#     )
 
 
 def answer(question: str, mode: ChainMode = "constructor") -> str:

@@ -13,6 +13,9 @@ env/
 .env.*
 **/.env
 **/.env.*
+# ...but always allow committing example/template env files
+!.env.example
+!**/.env.example
 
 # Python cache/artifacts
 __pycache__/
@@ -37,5 +40,3 @@ Thumbs.db
 **/*.sqlite3
 **/*.sqlite3-shm
 **/*.sqlite3-wal
-
-04_assistant_v2_tools/
